@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <!-- Basics -->
+    <groupId>org.osgi.cdi</groupId>
+    <artifactId>osgi-cdi-core</artifactId>
+    <version>0.1-SNAPSHOT</version>
+    <packaging>bundle</packaging>
+
+    <!-- Human readables -->
+    <name>Infrastructure bundle Impl</name>
+    <description>
+        This is the implementation of OSGi-CDI-API.
+    </description>
+    <url>http://www.serli.com/</url>
+
+    <!-- Parent -->
+    <parent>
+        <groupId>org.jboss.weld.osgi</groupId>
+        <artifactId>weld-osgi-cdi</artifactId>
+        <version>0.1-SNAPSHOT</version>
+    </parent>
+
+    <!-- Properties -->
+    <properties>
+        <version.osgicdiapi>0.1-SNAPSHOT</version.osgicdiapi>
+    </properties>
+
+    <!-- Dependencies -->
+    <dependencies>
+
+        <dependency>
+            <groupId>org.osgi.cdi</groupId>
+            <artifactId>osgi-cdi-api</artifactId>
+            <version>${version.osgicdiapi}</version>
+        </dependency>
+
+    </dependencies>
+
+    <!-- Build -->
+    <build>
+
+        <plugins>
+
+            <plugin>
+                <groupId>org.apache.felix</groupId>
+                <artifactId>maven-bundle-plugin</artifactId>
+                <configuration>
+                    <unpackBundle>true</unpackBundle>
+                </configuration>
+            </plugin>
+
+        </plugins>
+
+    </build>
+
+
+</project>

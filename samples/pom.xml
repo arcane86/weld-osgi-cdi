@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    
+    <!-- Basics -->
+    <groupId>org.jboss.weld.osgi</groupId>
+    <artifactId>samples</artifactId>
+    <version>0.1-SNAPSHOT</version>
+    <packaging>pom</packaging>
+    
+    <!-- Human readables -->
+    <name>Infrastructure bundle</name>
+    <description>
+        TODO
+    </description>
+    <url>http://www.serli.com/</url>
+    
+    <!-- Parent -->
+    <parent>
+        <groupId>org.jboss.weld.osgi</groupId>
+        <artifactId>weld-osgi-cdi</artifactId>
+        <version>0.1-SNAPSHOT</version>
+    </parent>
+    
+    <!-- Modules -->
+    <modules>
+    </modules>
+    
+</project>

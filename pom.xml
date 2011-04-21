@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <!-- Basics -->
+    <groupId>org.jboss.weld.osgi</groupId>
+    <artifactId>weld-osgi-cdi</artifactId>
+    <version>0.1-SNAPSHOT</version>
+    <packaging>pom</packaging>
+
+    <!-- Human readables -->
+    <name>CDI support for OSGi environment</name>
+    <description>
+        This is an extension to OSGi environment using CDI. It defines a CDI
+        support for various OSGi utilities:
+        * an extension API that describes CDI usages in OSGi environment,
+        * an integration API that describes how a CDI container should
+        bootstrap with this extension.
+        It also provide a Weld implementation that matchs this integration
+        and various sample usages of these bundles.
+     </description>
+    <url>http://www.serli.com/</url>
+
+    <!-- Modules -->
+    <modules>
+        <module>osgi-cdi</module>
+        <module>weld-osgi</module>
+        <module>samples</module>
+    </modules>
+    
+    <!-- Properties -->
+    <properties>
+        <version.bundleplugin>2.1.0</version.bundleplugin>
+    </properties>
+    
+    <!-- Repositories -->
+    <repositories>
+    
+        <repository>
+            <id>jboss-public-repository-group</id>
+            <name>JBoss Public Maven Repository Group</name>
+            <url>https://repository.jboss.org/nexus/content/groups/public</url>
+            <layout>default</layout>
+            <releases>
+                <enabled>true</enabled>
+                <updatePolicy>daily</updatePolicy>
+                <checksumPolicy>fail</checksumPolicy>
+            </releases>
+            <snapshots>
+                <enabled>true</enabled>
+                <updatePolicy>daily</updatePolicy>
+                <checksumPolicy>fail</checksumPolicy>
+            </snapshots>
+        </repository>
+        
+        <repository>
+            <id>jboss-snapshots</id>
+            <name>JBoss Snapshot Repository</name>
+            <url>https://repository.jboss.org/nexus/content/repositories/snapshots/</url>
+            <layout>default</layout>
+            <releases>
+                <enabled>false</enabled>
+                <updatePolicy>never</updatePolicy>
+                <checksumPolicy>fail</checksumPolicy>
+            </releases>
+            <snapshots>
+                <enabled>true</enabled>
+                <updatePolicy>daily</updatePolicy>
+                <checksumPolicy>fail</checksumPolicy>
+            </snapshots>
+        </repository>
+        
+        <repository>
+            <id>jboss-for-cdi-api</id>
+            <name>JBoss CDI Repository</name>
+            <url>http://maven.glassfish.org/content/repositories/JBoss/</url>
+            <releases>
+                <enabled>true</enabled>
+                <updatePolicy>daily</updatePolicy>
+                <checksumPolicy>fail</checksumPolicy>
+            </releases>
+            <snapshots>
+                <enabled>false</enabled>
+                <updatePolicy>never</updatePolicy>
+                <checksumPolicy>fail</checksumPolicy>
+            </snapshots>
+        </repository>
+        
+    </repositories>
+    
+    <!-- Dependencies -->
+    <dependencies>
+    </dependencies>
+    
+    <!-- Build -->
+    <build>
+    
+        <pluginManagement>
+            <plugins>
+            
+                <plugin>
+                    <groupId>org.apache.felix</groupId>
+                    <artifactId>maven-bundle-plugin</artifactId>
+                    <version>${version.bundleplugin}</version>
+                    <extensions>true</extensions>
+                    <configuration>
+                        <instructions>
+                            <_include>-target/classes/META-INF/${project.artifactId}.bnd</_include>
+                        </instructions>
+                    </configuration>
+                </plugin>
+                
+            </plugins>
+        </pluginManagement>
+    
+        <plugins>
+        
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <configuration>
+                    <source>1.6</source>
+                    <target>1.6</target>
+                </configuration>
+            </plugin>
+            
+        </plugins>
+        
+    </build>
+
+    
+</project>

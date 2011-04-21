@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <!-- Basics -->
+    <groupId>org.osgi.cdi</groupId>
+    <artifactId>osgi-cdi</artifactId>
+    <version>0.1-SNAPSHOT</version>
+    <packaging>pom</packaging>
+
+    <!-- Human readables -->
+    <name>OSGI-CDI</name>
+    <description>
+        This is the CDI OSGi extension. It contains two bundles:
+        * an API bundle including both extension and integration APIs
+        * an implementation bundle for these APIs
+     </description>
+    <url>http://www.serli.com/</url>
+
+    <!-- Modules -->
+    <modules>
+        <module>osgi-cdi-api</module>
+        <module>osgi-cdi-core</module>
+    </modules>
+    
+    <!-- Properties -->
+    <properties>
+    </properties>
+    
+    <!-- Repositories -->
+    <repositories>    
+    </repositories>
+    
+    <!-- Dependencies -->
+    <dependencies>
+    </dependencies>
+    
+    <!-- Build -->
+    <build>
+    </build>
+
+    
+</project>

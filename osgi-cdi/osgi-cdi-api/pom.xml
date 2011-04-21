@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <!-- Basics -->
+    <groupId>org.osgi.cdi</groupId>
+    <artifactId>osgi-cdi-api</artifactId>
+    <version>0.1-SNAPSHOT</version>
+    <packaging>bundle</packaging>
+
+    <!-- Human readables -->
+    <name>Infrastructure bundle API</name>
+    <description>
+        This is a bundle that exposes two APIs:
+        * the CDI OSGi extension API
+        * the CDI container integration API
+    </description>
+    <url>http://www.serli.com/</url>
+
+    <!-- Parent -->
+    <parent>
+        <groupId>org.jboss.weld.osgi</groupId>
+        <artifactId>weld-osgi-cdi</artifactId>
+        <version>0.1-SNAPSHOT</version>
+    </parent>
+
+    <!-- Properties -->
+    <properties>
+        <version.osgi>4.2.0</version.osgi>
+        <version.cdi>1.0-SP4</version.cdi>
+    </properties>
+
+    <!-- Dependencies -->
+    <dependencies>
+
+        <!--suppress osmorcNonOsgiMavenDependency -->
+        <dependency>
+            <groupId>javax.enterprise</groupId>
+            <artifactId>cdi-api</artifactId>
+            <version>${version.cdi}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.osgi</groupId>
+            <artifactId>org.osgi.core</artifactId>
+            <version>${version.osgi}</version>
+        </dependency>
+
+    </dependencies>
+
+    <!-- Build -->
+    <build>
+
+        <plugins>
+
+            <plugin>
+                <groupId>org.apache.felix</groupId>
+                <artifactId>maven-bundle-plugin</artifactId>
+                <configuration>
+                    <unpackBundle>true</unpackBundle>
+                </configuration>
+            </plugin>
+
+        </plugins>
+
+    </build>
+
+
+</project>
