@@ -2,6 +2,7 @@ package org.osgi.cdi.extension.impl.services;
 
 import org.osgi.cdi.extension.api.Registration;
 import org.osgi.cdi.extension.api.Registrations;
+import org.osgi.cdi.integration.api.RegistrationsHolder;
 import org.osgi.framework.Bundle;
 import org.osgi.framework.BundleContext;
 import org.osgi.framework.ServiceRegistration;

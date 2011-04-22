@@ -10,6 +10,9 @@ import org.osgi.cdi.extension.api.event.BundleContainerInitialized;
 import org.osgi.cdi.extension.api.event.BundleContainerShutdown;
 import org.osgi.cdi.integration.api.BundleContainer;
 import org.osgi.cdi.integration.api.BundleContainers;
+import org.osgi.cdi.integration.api.BundleHolder;
+import org.osgi.cdi.integration.api.ContainerObserver;
+import org.osgi.cdi.integration.api.RegistrationsHolder;
 import org.osgi.framework.Bundle;
 import org.osgi.framework.ServiceRegistration;
 

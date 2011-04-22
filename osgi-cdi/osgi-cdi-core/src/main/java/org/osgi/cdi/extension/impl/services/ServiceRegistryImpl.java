@@ -13,6 +13,8 @@ import org.osgi.cdi.extension.api.event.ServiceChanged;
 import org.osgi.cdi.extension.api.event.ServiceDeparture;
 import org.osgi.cdi.extension.api.event.Valid;
 import org.osgi.cdi.extension.impl.CDIOSGiExtension;
+import org.osgi.cdi.integration.api.BundleHolder;
+import org.osgi.cdi.integration.api.RegistrationsHolder;
 import org.osgi.framework.Bundle;
 import org.osgi.framework.BundleContext;
 import org.osgi.framework.InvalidSyntaxException;

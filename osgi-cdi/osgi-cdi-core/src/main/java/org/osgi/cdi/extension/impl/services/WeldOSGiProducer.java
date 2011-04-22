@@ -8,6 +8,8 @@ import org.osgi.cdi.extension.api.annotation.BundleHeaders;
 import org.osgi.cdi.extension.api.annotation.OSGiBundle;
 import org.osgi.cdi.extension.api.annotation.Required;
 import org.osgi.cdi.extension.impl.CDIOSGiExtension;
+import org.osgi.cdi.integration.api.BundleHolder;
+import org.osgi.cdi.integration.api.RegistrationsHolder;
 import org.osgi.framework.Bundle;
 import org.osgi.framework.BundleContext;
 import org.osgi.framework.Version;

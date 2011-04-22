@@ -1,4 +1,4 @@
-package org.osgi.cdi.extension.impl.services;
+package org.osgi.cdi.integration.api;
 
 import org.osgi.cdi.extension.api.BundleState;
 import org.osgi.framework.Bundle;
