@@ -27,7 +27,7 @@
     <!-- Properties -->
     <properties>
         <version.osgicdiapi>0.1-SNAPSHOT</version.osgicdiapi>
-        <version.weld>1.1.0-SNAPSHOT</version.weld>
+        <version.weld>1.1.1.Final</version.weld>
     </properties>
     
     <!-- Dependencies -->
