@@ -2,7 +2,7 @@ package com.sample.osgi.paint.triangle;
 
 import com.sample.osgi.paint.api.Shape;
 import com.sample.osgi.paint.api.ShapeProvider;
-import org.osgi.cdi.extension.api.annotation.Publish;
+import org.osgi.cdi.api.extension.annotation.Publish;
 
 import javax.enterprise.context.ApplicationScoped;
 

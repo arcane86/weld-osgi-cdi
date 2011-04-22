@@ -2,10 +2,10 @@ package com.sample.osgi.paint.square;
 
 import com.sample.osgi.paint.api.Shape;
 import com.sample.osgi.paint.api.ShapeProvider;
-import org.osgi.cdi.extension.api.annotation.Publish;
-import org.osgi.cdi.extension.api.annotation.Sent;
-import org.osgi.cdi.extension.api.annotation.Specification;
-import org.osgi.cdi.extension.api.event.InterBundleEvent;
+import org.osgi.cdi.api.extension.annotation.Publish;
+import org.osgi.cdi.api.extension.annotation.Sent;
+import org.osgi.cdi.api.extension.annotation.Specification;
+import org.osgi.cdi.api.extension.events.InterBundleEvent;
 
 import javax.enterprise.context.ApplicationScoped;
 import javax.enterprise.event.Observes;

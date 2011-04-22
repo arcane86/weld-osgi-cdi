@@ -3,12 +3,12 @@ package com.sample.osgi.paint.gui;
 import com.sample.osgi.paint.api.Shape;
 import com.sample.osgi.paint.api.ShapeProvider;
 import com.sample.osgi.paint.circle.CircleShape;
-import org.osgi.cdi.extension.api.Services;
-import org.osgi.cdi.extension.api.annotation.Required;
-import org.osgi.cdi.extension.api.annotation.Specification;
-import org.osgi.cdi.extension.api.event.InterBundleEvent;
-import org.osgi.cdi.extension.api.event.ServiceArrival;
-import org.osgi.cdi.extension.api.event.ServiceDeparture;
+import org.osgi.cdi.api.extension.Services;
+import org.osgi.cdi.api.extension.annotation.Required;
+import org.osgi.cdi.api.extension.annotation.Specification;
+import org.osgi.cdi.api.extension.events.InterBundleEvent;
+import org.osgi.cdi.api.extension.events.ServiceArrival;
+import org.osgi.cdi.api.extension.events.ServiceDeparture;
 import org.osgi.framework.Bundle;
 
 import javax.enterprise.event.Event;
